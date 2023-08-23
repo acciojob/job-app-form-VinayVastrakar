@@ -17,22 +17,21 @@
 	<label for="email">Email</label>
 	<input type="email" name="email" id="email" required>
 	<fieldset>
-		<legend>Gender*</legend>
+		<legend><label for="gender">Gender</label></legend>
 		<p>
-			Male<input type="radio" name="gender" required>
-			Female<input type="radio" name="gender" required>
+			Male<input type="radio" name="gender" id="gender" required>
+			Female<input type="radio" name="gender" id="gender"required>
 		</p>
 	</fieldset>
-	<p>Laptop Brands: *
-		<select name="laptop" id="laptop">
-			<option value="">--Select Brand--</option>
-			<option value="Apple">Apple</option>
-			<option value="Asus">Asus</option>
-			<option value="Hp">Hp</option>
-			<option value="Dell">Dell</option>
-			<option value="Lenovo">Lenovo</option>
-		</select>
-	</p>
+	<label for="laptop">Laptop  Brand</label>
+		 <select id="laptop" name="laptop" required>
+            <option value="" disabled selected>--Please choose an option--</option>
+            <option value="Apple">Apple</option>
+            <option value="Hp">hp</option>
+            <option value="asus">Asus</option>
+        </select>
+	<br>
+	<br>
 	<label for="age">Age</label>
 	<input type="number" id="age" required>
 	<br>
